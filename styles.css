@@ -5,94 +5,90 @@
   text-align: center;
 }
 
-body{
+body {
   height: 100vh;
 }
 
-.container{
+.container {
   display: grid;
   height: 100%;
-  grid-template-columns:repeat(4, 1fr);
-  grid-template-rows:60px auto repeat(3, 120px);
-  grid-template-areas:     
-  "header menu menu menu"
-  "hero hero hero hero"
-  "main main . image"
-  "main main . extra"
-  "banner banner banner banner"
-  ;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 60px auto repeat(3, 120px);
+  grid-template-areas:
+    "header menu menu menu"
+    "hero hero hero hero"
+    "main main . image"
+    "main main . extra"
+    "banner banner banner banner";
 }
 
-.item1{
+.item1 {
   grid-area: header;
 }
 
-.item2{
+.item2 {
   grid-area: menu;
 }
 
-.item3{
+.item3 {
   grid-area: hero;
 }
 
-.item4{
+.item4 {
   grid-area: main;
 }
 
-.item5{
+.item5 {
   grid-area: image;
 }
 
-.item6{
+.item6 {
   grid-area: extra;
 }
 
-.item7{
+.item7 {
   grid-area: banner;
 }
 
 /* tablet 600px -  962px*/
 @media screen and (max-width:601px) {
-  .container{
+  .container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(11, 1fr);
-    grid-template-areas: 
-    "header header header header"
-    "hero hero hero hero"
-    "hero hero hero hero"
-    "hero hero hero hero"
-    "menu main main main"
-    "menu main main main"
-    "menu main main main"
-    "menu banner banner banner"
-    "menu banner banner banner"
-    "menu extra extra image"
-    "menu extra extra image"
-    ;
+    grid-template-areas:
+      "header header header header"
+      "hero hero hero hero"
+      "hero hero hero hero"
+      "hero hero hero hero"
+      "menu main main main"
+      "menu main main main"
+      "menu main main main"
+      "menu banner banner banner"
+      "menu banner banner banner"
+      "menu extra extra image"
+      "menu extra extra image";
   }
 }
 
-/* ==MOBILE== 360-640 */
+/* MOBILE 360-640 */
 @media screen and (max-width:360px) {
-  .container{
+  .container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(14, 1fr);
-    grid-template-areas: 
-    "header header"
-    "menu menu"
-    "hero hero"
-    "hero hero"
-    "hero hero"
-    "main main"
-    "main main"
-    "main main"
-    "banner banner"
-    "banner banner"
-    "extra extra"
-    "extra extra"
-    "image image"
-    "image image"
-    ;
+    grid-template-areas:
+      "header header"
+      "menu menu"
+      "hero hero"
+      "hero hero"
+      "hero hero"
+      "main main"
+      "main main"
+      "main main"
+      "banner banner"
+      "banner banner"
+      "extra extra"
+      "extra extra"
+      "image image"
+      "image image";
   }
 }
-
